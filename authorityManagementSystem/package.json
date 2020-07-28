@@ -1,0 +1,35 @@
+{
+  "name": "authority-management",
+  "version": "1.0.0",
+  "description": "权限管理配置中心系统",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "dev": "webpack-dev-server --inline --hot --mode=development",
+    "build": "webpack --config webpack.config.js --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlp19910402/authorityManagementSystem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wlp19910402/authorityManagementSystem/issues"
+  },
+  "homepage": "https://github.com/wlp19910402/authorityManagementSystem#readme",
+  "devDependencies": {
+    "css-loader": "^4.0.0",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.44.0"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "vue-router": "^3.3.4",
+    "vuex": "^3.5.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
