@@ -27,8 +27,6 @@ process.argv.some(function (arg) {
     }
   }
 });
-
-
 module.exports = {
   // entry: path.join(__dirname, 'src/h5/pages/demo.js'),
   entry: path.join(__dirname, 'src/' + featureName + '/pages/' + page + '.js'),
@@ -117,6 +115,15 @@ module.exports = {
             }
           }
         ])
+      },
+      {
+        test: /\.(gif|svg|jpe?g|png|ico|hdr)(\?\S*)?$/,
+        exclude: [ resolve('asset/images') ],
+        options: {
+          limit: 2048,
+          outputPath: 'images/',
+          // name: `${devMode ? "." : "."}/images/[name]-[hash].[ext]`
+        }
       }
     ]
   },
